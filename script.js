@@ -2,17 +2,33 @@
 function generatePassword() {
   // allowed chracters
   let chars =
-    "abcdefghijklmnopqrstuvwxyz0123456789";
-    const upperCase = prompt("Do you want to include uppercase letters? (y/n)").toLowerCase();
-    const specialChars = prompt("Do you want to include special characters? (y/n)").toLowerCase();
-    const toLowerCase = prompt("Do you want to include lower case letters? (y/n)").toLocaleUpperCase();
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+";
+  let includeNumbers = false;
 
-    if(upperCase === 'y') {
-      chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    }
-    if (specialChars === 'y') {
-      chars += "!@#$%^&*()_+";
-    }
+  const upperCase = prompt(
+    "Do you want to include uppercase letters? (y/n)"
+  ).toLowerCase();
+  const specialChars = prompt(
+    "Do you want to include special characters? (y/n)"
+  ).toLowerCase();
+  const toLowerCase = prompt(
+    "Do you want to include lower case letters? (y/n)"
+  ).toUpperCase();
+
+  if (upperCase === "y") {
+    chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+  if (specialChars === "y") {
+    chars += "!@#$%^&*()_+";
+  }
+
+  includeNumbers = confirm(
+    "Would you like to include numeric values in your password?"
+  );
+  // parameter if the user wants to include numbers
+  if (includeNumbers) {
+    chars += "0123456789";
+  }
 
   let password = "";
   let passwordLength = 0;
@@ -28,7 +44,7 @@ function generatePassword() {
     if (passwordLength === null || isNaN(passwordLength)) {
       return "";
     }
-    // pareInt function to return integer
+    // parseInt function to return integer
     passwordLength = parseInt(passwordLength, 10);
     // setting parameters for password length
     if (passwordLength < 8 || passwordLength > 128) {

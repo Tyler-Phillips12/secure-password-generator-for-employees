@@ -4,6 +4,8 @@ This is a random password generator application that can be used by employees to
 # Screenshot of Web Page
 <img width="1278" alt="random-password-gen" src="https://user-images.githubusercontent.com/123614404/224800939-8e5542e4-d40a-4b29-af7d-37b7cbd211a8.png">
 
+https://tyler-phillips12.github.io/secure-password-generator-for-employees/
+
 # What is this?
 This is a random password generator application written in Javascript, HTML, and CSS
 

@@ -5,6 +5,14 @@ function generatePassword() {
     "abcdefghijklmnopqrstuvwxyz0123456789";
     const upperCase = prompt("Do you want to include uppercase letters? (y/n)").toLowerCase();
     const specialChars = prompt("Do you want to include special characters? (y/n)").toLowerCase();
+    const toLowerCase = prompt("Do you want to include lower case letters? (y/n)").toLocaleUpperCase();
+
+    if(upperCase === 'y') {
+      chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    }
+    if (specialChars === 'y') {
+      chars += "!@#$%^&*()_+";
+    }
 
   let password = "";
   let passwordLength = 0;

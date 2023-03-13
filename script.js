@@ -13,7 +13,7 @@ function generatePassword() {
   ).toLowerCase();
   const toLowerCase = prompt(
     "Do you want to include lower case letters? (y/n)"
-  ).toUpperCase();
+  ).toLowerCase();
 
   if (upperCase === "y") {
     chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

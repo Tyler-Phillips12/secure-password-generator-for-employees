@@ -1,8 +1,10 @@
 // generatePassword Function
 function generatePassword() {
   // allowed chracters
-  const chars =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+  let chars =
+    "abcdefghijklmnopqrstuvwxyz0123456789";
+    const upperCase = prompt("Do you want to include uppercase letters? (y/n)").toLowerCase();
+    const specialChars = prompt("Do you want to include special characters? (y/n)").toLowerCase();
 
   let password = "";
   let passwordLength = 0;

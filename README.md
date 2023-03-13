@@ -1,5 +1,5 @@
 # Employee Password Generator 
-This is a random password generator application that can be used by employees to generate a random password between 8 and 128 characters and with the option sof chosing lower case, upper case, and special characters.
+This is a random password generator application that can be used by employees to generate a random password between 8 and 128 characters and with the option of choosing lower case, upper case, and special characters.
 
 # Screenshot of Web Page
 <img width="1278" alt="random-password-gen" src="https://user-images.githubusercontent.com/123614404/224800939-8e5542e4-d40a-4b29-af7d-37b7cbd211a8.png">

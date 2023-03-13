@@ -2,7 +2,7 @@
 function generatePassword() {
   // allowed chracters
   let chars =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+";
+    "abcdefghijklmnopqrstuvwxyz";
   let includeNumbers = false;
 
   const upperCase = prompt(
@@ -20,6 +20,10 @@ function generatePassword() {
   }
   if (specialChars === "y") {
     chars += "!@#$%^&*()_+";
+  }
+
+  if (toLowerCase === "y") {
+    chars += "abcdefghijklmnopqrstuvwxyz";
   }
 
   includeNumbers = confirm(
